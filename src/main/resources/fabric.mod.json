@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "toastified",
+	"version": "${version}",
+	"name": "Toastified",
+	"description": "This is a test mod as of yet!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "Creative Commons",
+	"icon": "assets/toastified/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "samuelperzel.toastified.Toastified"
+		],
+		"client": [
+			"samuelperzel.toastified.ToastifiedClient"
+		],
+		"fabric-datagen": [
+          "samuelperzel.toastified.ToastifiedDataGenerator"
+		]
+	},
+	"mixins": [
+		"toastified.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
