@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "toastified:spectralite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "toastified:spectralite_crystal"
+  }
+}

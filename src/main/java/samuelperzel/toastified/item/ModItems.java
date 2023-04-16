@@ -18,18 +18,18 @@ public class ModItems {
     public static final Item PULVERIZED_SPECTRALITE = registerItem("pulverized_spectralite",
             new Item(new FabricItemSettings()));
 
+    public static final Item SPECTRALITE_INGOT = registerItem("spectralite_ingot",
+            new Item(new FabricItemSettings()));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Toastified.MOD_ID, name), item);
     }
-
-    public static final Item SPECTRALITE_BAR = registerItem("spectralite_bar",
-            new Item(new FabricItemSettings()));
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ModItemGroup.TOASTIFIED, RAW_SPECTRALITE);
         addToItemGroup(ModItemGroup.TOASTIFIED, SPECTRALITE_CRYSTAL);
         addToItemGroup(ModItemGroup.TOASTIFIED, PULVERIZED_SPECTRALITE);
-        addToItemGroup(ModItemGroup.TOASTIFIED, SPECTRALITE_BAR);
+        addToItemGroup(ModItemGroup.TOASTIFIED, SPECTRALITE_INGOT);
     }
     private static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
