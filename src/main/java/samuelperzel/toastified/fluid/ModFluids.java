@@ -32,7 +32,7 @@ public class ModFluids {
     }
 
     public static void addFluidsToItemGroup() {
-        addToItemGroup(ModItemGroup.TOASTIFIED, LIQUIFIED_LIGHT_BUCKET);
+        addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, LIQUIFIED_LIGHT_BUCKET);
     }
     private static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

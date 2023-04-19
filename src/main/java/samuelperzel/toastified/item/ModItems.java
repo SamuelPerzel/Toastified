@@ -26,10 +26,17 @@ public class ModItems {
     }
 
     public static void addItemsToItemGroup() {
-        addToItemGroup(ModItemGroup.TOASTIFIED, RAW_SPECTRALITE);
-        addToItemGroup(ModItemGroup.TOASTIFIED, SPECTRALITE_CRYSTAL);
-        addToItemGroup(ModItemGroup.TOASTIFIED, PULVERIZED_SPECTRALITE);
-        addToItemGroup(ModItemGroup.TOASTIFIED, SPECTRALITE_INGOT);
+        // ITEMS
+        addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, SPECTRALITE_CRYSTAL);
+        addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, PULVERIZED_SPECTRALITE);
+        addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, SPECTRALITE_INGOT);
+
+        // ORES
+        addToItemGroup(ModItemGroup.TOASTIFIED_ORES, RAW_SPECTRALITE);
+
+        // TOOLS
+
+        // COMBAT
     }
     private static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));

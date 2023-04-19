@@ -22,13 +22,13 @@ public class ModBlocks {
             .strength(10.0f)
             .requiresTool(),
             UniformIntProvider.create(6, 8)),
-            ModItemGroup.TOASTIFIED);
+            ModItemGroup.TOASTIFIED_ORES);
 
     public static final Block SPECTRALITE_BLOCK = registerBlock("spectralite_block",
             new Block(FabricBlockSettings.of(Material.AMETHYST)
             .strength(10.0f)
             .requiresTool()),
-            ModItemGroup.TOASTIFIED);
+            ModItemGroup.TOASTIFIED_BLOCKS);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

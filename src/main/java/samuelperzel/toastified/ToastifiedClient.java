@@ -15,10 +15,9 @@ public class ToastifiedClient implements ClientModInitializer {
     public void onInitializeClient() {
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUIFIED_LIGHT, ModFluids.FLOWING_LIQUIFIED_LIGHT,
                 new SimpleFluidRenderHandler(
-                        new Identifier("minecraft:block/water_still"),
-                        new Identifier("minecraft:block/water_flow"),
-                        //0xA1FFDF80
-                        new Color(255, 223, 128, 100).getRGB()
+                        new Identifier("toastified:block/liquified_light_still"),
+                        new Identifier("toastified:block/liquified_light_flow"),
+                        new Color(255, 246, 186).getRGB() // butter milk yellow
                 ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.STILL_LIQUIFIED_LIGHT, ModFluids.FLOWING_LIQUIFIED_LIGHT);
