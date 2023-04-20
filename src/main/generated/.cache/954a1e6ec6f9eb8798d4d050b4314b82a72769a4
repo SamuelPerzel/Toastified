@@ -1,12 +1,16 @@
-// 1.19.4	2023-04-16T16:18:34.2830324	Toastified/Model Definitions
-2e4805b5f1d275458506ea7d89a5f6faf60d9d4f assets\toastified\models\item\spectralite_crystal.json
+// 1.19.4	2023-04-20T11:09:21.6766772	Toastified/Model Definitions
+e838166ee81d9d2b88061cd30bbe1088d36d2125 assets\toastified\models\item\steel_block.json
 b1a7ee936f4606e59e650cd3dbed9e8d1f43e67f assets\toastified\models\item\raw_spectralite.json
 65d516af6c396eca24399b84ca65a2f207686a40 assets\toastified\blockstates\spectralite_ore.json
+4740198175f00263a62443efff11ece33a49a5b0 assets\toastified\blockstates\steel_block.json
 409091bebdacc1d1c8c64f31a0490f36d8eeec04 assets\toastified\models\block\spectralite_block.json
 2aa888150f655fedbd7ad805fe53df032d36b64d assets\toastified\models\block\spectralite_ore.json
+fd80fbbdded65a9e8c043d2822a34b8bfbefea2a assets\toastified\models\item\steel_ingot.json
+49d0b3220e19b5fb241e89d4cb79e6bc78604b70 assets\toastified\models\item\spectralite_ingot.json
+6a65c561497d00cc48e03b30276746d44821247c assets\toastified\models\block\steel_block.json
+f58260ee532f69662acb3e5b7cc97433ebb442d1 assets\toastified\models\item\spectralite_ore.json
+2e4805b5f1d275458506ea7d89a5f6faf60d9d4f assets\toastified\models\item\spectralite_crystal.json
 886d255b404dbdb10b5d20b44be603c8c3d8e647 assets\toastified\models\item\liquified_light_bucket.json
 443b3b63c323763d5b8e0b37ffa9af8ae4fd4012 assets\toastified\models\item\spectralite_block.json
 2d5f68fc9646e64475537fc1e3e38b9d03958c2e assets\toastified\blockstates\spectralite_block.json
-49d0b3220e19b5fb241e89d4cb79e6bc78604b70 assets\toastified\models\item\spectralite_ingot.json
 92adf218b43427e76ae9761fc3ae9e0a42793ef5 assets\toastified\models\item\pulverized_spectralite.json
-f58260ee532f69662acb3e5b7cc97433ebb442d1 assets\toastified\models\item\spectralite_ore.json

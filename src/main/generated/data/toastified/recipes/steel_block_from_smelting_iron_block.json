@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 1800,
+  "experience": 9.0,
+  "group": "steel",
+  "ingredient": {
+    "item": "minecraft:iron_block"
+  },
+  "result": "toastified:steel_block"
+}

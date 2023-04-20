@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 900,
+  "experience": 9.0,
+  "group": "steel",
+  "ingredient": {
+    "item": "minecraft:iron_block"
+  },
+  "result": "toastified:steel_block"
+}

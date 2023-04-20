@@ -16,19 +16,30 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPECTRALITE_ORE);
+        // ----------------------------------------------------------------------------------------------------
+        // BLOCKS
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPECTRALITE_BLOCK);
+        // ----------------------------------------------------------------------------------------------------
+        // ORES
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SPECTRALITE_ORE);
+        // ----------------------------------------------------------------------------------------------------
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        // ----------------------------------------------------------------------------------------------------
         // ITEMS
+        // steel
+        itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
+        // crystalite
         itemModelGenerator.register(ModItems.RAW_SPECTRALITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPECTRALITE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.PULVERIZED_SPECTRALITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPECTRALITE_INGOT, Models.GENERATED);
-
+        // ----------------------------------------------------------------------------------------------------
         // FLUIDS
         itemModelGenerator.register(ModFluids.LIQUIFIED_LIGHT_BUCKET, Models.GENERATED);
+        // ----------------------------------------------------------------------------------------------------
     }
 }

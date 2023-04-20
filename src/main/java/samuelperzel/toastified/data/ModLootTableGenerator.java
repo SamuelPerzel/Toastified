@@ -14,6 +14,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.SPECTRALITE_ORE, oreDrops(ModBlocks.SPECTRALITE_ORE, ModItems.RAW_SPECTRALITE));
 
+        addDrop(ModBlocks.STEEL_BLOCK);
         addDrop(ModBlocks.SPECTRALITE_BLOCK);
     }
 }

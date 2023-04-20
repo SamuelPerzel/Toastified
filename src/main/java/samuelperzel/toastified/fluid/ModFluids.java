@@ -27,7 +27,7 @@ public class ModFluids {
         STILL_LIQUIFIED_LIGHT = Registry.register(Registries.FLUID, new Identifier(Toastified.MOD_ID, "liquified_light"), new LiquifiedLightFluid.Still());
         FLOWING_LIQUIFIED_LIGHT = Registry.register(Registries.FLUID, new Identifier(Toastified.MOD_ID, "flowing_liquified_light"), new LiquifiedLightFluid.Flowing());
 
-        LIQUIFIED_LIGHT_BLOCK = Registry.register(Registries.BLOCK, new Identifier(Toastified.MOD_ID, "liquified_light_block"), new FluidBlock(ModFluids.STILL_LIQUIFIED_LIGHT, FabricBlockSettings.copyOf(Blocks.WATER)){ });
+        LIQUIFIED_LIGHT_BLOCK = Registry.register(Registries.BLOCK, new Identifier(Toastified.MOD_ID, "liquified_light_block"), new FluidBlock(ModFluids.STILL_LIQUIFIED_LIGHT, FabricBlockSettings.copyOf(Blocks.WATER).luminance(15)){ });
         LIQUIFIED_LIGHT_BUCKET = Registry.register(Registries.ITEM, new Identifier(Toastified.MOD_ID, "liquified_light_bucket"), new BucketItem(ModFluids.STILL_LIQUIFIED_LIGHT, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
     }
 

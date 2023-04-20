@@ -10,6 +10,12 @@ import net.minecraft.util.Identifier;
 import samuelperzel.toastified.Toastified;
 
 public class ModItems {
+    // ----------------------------------------------------------------------------------------------------
+    // steel
+    public static final Item STEEL_INGOT = registerItem("steel_ingot",
+            new Item(new FabricItemSettings()));
+    // ----------------------------------------------------------------------------------------------------
+    // spectralite
     public static final Item RAW_SPECTRALITE = registerItem("raw_spectralite",
             new Item(new FabricItemSettings()));
     public static final Item SPECTRALITE_CRYSTAL = registerItem("spectralite_crystal",
@@ -20,23 +26,29 @@ public class ModItems {
 
     public static final Item SPECTRALITE_INGOT = registerItem("spectralite_ingot",
             new Item(new FabricItemSettings()));
+    // ----------------------------------------------------------------------------------------------------
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Toastified.MOD_ID, name), item);
     }
 
     public static void addItemsToItemGroup() {
+        // ----------------------------------------------------------------------------------------------------
         // ITEMS
+        // steel
+        addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, STEEL_INGOT);
+        // spectralite
         addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, SPECTRALITE_CRYSTAL);
         addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, PULVERIZED_SPECTRALITE);
         addToItemGroup(ModItemGroup.TOASTIFIED_ITEMS, SPECTRALITE_INGOT);
-
+        // ----------------------------------------------------------------------------------------------------
         // ORES
         addToItemGroup(ModItemGroup.TOASTIFIED_ORES, RAW_SPECTRALITE);
-
+        // ----------------------------------------------------------------------------------------------------
         // TOOLS
-
+        // ----------------------------------------------------------------------------------------------------
         // COMBAT
+        // ----------------------------------------------------------------------------------------------------
     }
     private static void addToItemGroup(ItemGroup group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
