@@ -1,12 +1,11 @@
 {
-  "block.toastified.steel_block": "Steel Block",
   "block.toastified.spectralite_block": "Spectralite Block",
   "block.toastified.spectralite_ore": "Spectralite Ore",
-
-  "item.toastified.steel_ingot": "Steel Ingot",
+  "block.toastified.steel_block": "Steel Block",
+  "item.toastified.liquified_light_bucket": "Bucket of Liquified Light",
+  "item.toastified.pulverized_spectralite": "Pulverized Spectralite",
   "item.toastified.raw_spectralite": "Raw Spectralite",
   "item.toastified.spectralite_crystal": "Spectralite Crystal",
-  "item.toastified.pulverized_spectralite": "Pulverized Spectralite",
   "item.toastified.spectralite_ingot": "Spectralite Ingot",
-  "item.toastified.liquified_light_bucket": "Bucket of Liquified Light"
+  "item.toastified.steel_ingot": "Steel Ingot"
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "toastified:steel_block",
     "toastified:spectralite_ore",
     "toastified:spectralite_block"
   ]
