@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider
 import net.minecraft.registry.RegistryWrapper;
 import samuelperzel.toastified.Toastified;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModWorldGenerator extends FabricDynamicRegistryProvider {
@@ -19,6 +20,6 @@ public class ModWorldGenerator extends FabricDynamicRegistryProvider {
 
     @Override
     public String getName() {
-        return Toastified.MOD_ID;
+        return null;
     }
 }
