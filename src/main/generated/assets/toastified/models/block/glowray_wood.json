@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "toastified:block/glowray_log",
+    "side": "toastified:block/glowray_log"
+  }
+}

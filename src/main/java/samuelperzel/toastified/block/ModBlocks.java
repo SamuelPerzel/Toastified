@@ -3,9 +3,7 @@ package samuelperzel.toastified.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -16,6 +14,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import samuelperzel.toastified.Toastified;
 import samuelperzel.toastified.item.ModItemGroup;
+import samuelperzel.toastified.world.tree.GlowraySaplingGenerator;
 
 public class ModBlocks {
     // ----------------------------------------------------------------------------------------------------
@@ -44,6 +43,28 @@ public class ModBlocks {
             .luminance(15)
             .sounds(BlockSoundGroup.AMETHYST_BLOCK)),
             ModItemGroup.TOASTIFIED_BLOCKS);
+
+    // glowray wood
+    public static final Block GLOWRAY_LOG = registerBlock("glowray_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)), ModItemGroup.TOASTIFIED_BLOCKS);
+
+    public static final Block GLOWRAY_WOOD = registerBlock("glowray_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)), ModItemGroup.TOASTIFIED_BLOCKS);
+
+    public static final Block STRIPPED_GLOWRAY_LOG = registerBlock("stripped_glowray_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)), ModItemGroup.TOASTIFIED_BLOCKS);
+
+    public static final Block STRIPPED_GLOWRAY_WOOD = registerBlock("stripped_glowray_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)), ModItemGroup.TOASTIFIED_BLOCKS);
+
+    public static final Block GLOWRAY_LEAVES = registerBlock("glowray_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)), ModItemGroup.TOASTIFIED_BLOCKS);
+
+    public static final Block GLOWRAY_PLANKS = registerBlock("glowray_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)), ModItemGroup.TOASTIFIED_BLOCKS);
+
+    public static final Block GLOWRAY_SAPLING = registerBlock("glowray_sapling",
+            new SaplingBlock(new GlowraySaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)), ModItemGroup.TOASTIFIED_BLOCKS);
     // ----------------------------------------------------------------------------------------------------
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {

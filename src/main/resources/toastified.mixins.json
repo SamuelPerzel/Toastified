@@ -3,7 +3,8 @@
 	"package": "samuelperzel.toastified.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "ToastifiedMixin"
+		"ToastifiedMixin",
+		"TrunkPlacerTypeInvoker"
 	],
 	"injectors": {
 		"defaultRequire": 1

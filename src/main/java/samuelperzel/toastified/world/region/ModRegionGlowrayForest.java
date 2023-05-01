@@ -15,9 +15,9 @@ import java.util.function.Consumer;
 
 import terrablender.api.ParameterUtils.*;
 
-public class ModRegionCrystalline extends Region {
+public class ModRegionGlowrayForest extends Region {
 
-    public ModRegionCrystalline(Identifier name, int weight) {
+    public ModRegionGlowrayForest(Identifier name, int weight) {
         super(name, RegionType.OVERWORLD, weight);
     }
 
@@ -27,12 +27,13 @@ public class ModRegionCrystalline extends Region {
         VanillaParameterOverlayBuilder builder = new VanillaParameterOverlayBuilder();
         new ParameterPointListBuilder()
                 .temperature(Temperature.span(Temperature.WARM, Temperature.HOT))
-                .humidity(Humidity.span(Humidity.NEUTRAL, Humidity.HUMID))
+                .humidity(Humidity.FULL_RANGE)
                 .continentalness(Continentalness.MID_INLAND, Continentalness.FAR_INLAND)
                 .erosion(Erosion.EROSION_0)
                 .depth(Depth.SURFACE)
+                .weirdness(Weirdness.VALLEY, Weirdness.LOW_SLICE_NORMAL_DESCENDING, Weirdness.LOW_SLICE_VARIANT_ASCENDING)
                 .offset((long) 0)
-                .build().forEach(point -> builder.add(point, ModBiomes.CRYSTAl_FIELDS));
+                .build().forEach(point -> builder.add(point, ModBiomes.GLOWRAY_FOREST));
 
         builder.build().forEach(mapper::accept);
 

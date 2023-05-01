@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-
+    "toastified:glowray_log",
+    "toastified:glowray_wood",
+    "toastified:stripped_glowray_log",
+    "toastified:stripped_glowray_wood",
+    "toastified:glowray_planks"
   ]
 }

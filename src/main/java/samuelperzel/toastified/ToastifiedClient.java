@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
+import samuelperzel.toastified.block.ModBlocks;
 import samuelperzel.toastified.fluid.ModFluids;
 
 import java.awt.Color;
@@ -13,6 +14,11 @@ import java.awt.Color;
 public class ToastifiedClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        // leaves and saplings
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOWRAY_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GLOWRAY_SAPLING, RenderLayer.getCutout());
+
+        // liquid light rendering
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_LIQUIFIED_LIGHT, ModFluids.FLOWING_LIQUIFIED_LIGHT,
                 new SimpleFluidRenderHandler(
                         new Identifier("toastified:block/liquified_light_still"),

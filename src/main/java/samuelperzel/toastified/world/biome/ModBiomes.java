@@ -7,7 +7,7 @@ import net.minecraft.world.biome.Biome;
 import samuelperzel.toastified.Toastified;
 
 public class ModBiomes {
-    public static final RegistryKey<Biome> CRYSTAl_FIELDS = register("crystal_fields");
+    public static final RegistryKey<Biome> GLOWRAY_FOREST = register("glowray_forest");
 
     private static RegistryKey<Biome> register(String name)
     {

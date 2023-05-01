@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "toastified:block/stripped_glowray_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "toastified:block/stripped_glowray_wood"
+    },
+    "axis=z": {
+      "model": "toastified:block/stripped_glowray_wood",
+      "x": 90
+    }
+  }
+}

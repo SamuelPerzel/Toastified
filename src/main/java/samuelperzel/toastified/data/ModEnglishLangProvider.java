@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import samuelperzel.toastified.block.ModBlocks;
 import samuelperzel.toastified.fluid.ModFluids;
 import samuelperzel.toastified.item.ModItems;
+import samuelperzel.toastified.world.biome.ModBiomes;
 
 import java.nio.file.Path;
 
@@ -33,6 +34,14 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         // spectralite
         translationBuilder.add(ModBlocks.SPECTRALITE_ORE, "Spectralite Ore");
         translationBuilder.add(ModBlocks.SPECTRALITE_BLOCK, "Spectralite Block");
+        // glowray wood
+        translationBuilder.add(ModBlocks.GLOWRAY_LOG, "Glowray Log");
+        translationBuilder.add(ModBlocks.GLOWRAY_WOOD, "Glowray WOOD");
+        translationBuilder.add(ModBlocks.STRIPPED_GLOWRAY_LOG, "Stripped Glowray Log");
+        translationBuilder.add(ModBlocks.STRIPPED_GLOWRAY_WOOD, "Stripped Glowray Wood");
+        translationBuilder.add(ModBlocks.GLOWRAY_LEAVES, "Glowray Leaves");
+        translationBuilder.add(ModBlocks.GLOWRAY_PLANKS, "Glowray Planks");
+        translationBuilder.add(ModBlocks.GLOWRAY_SAPLING, "Glowray Sapling");
         // ----------------------------------------------------------------------------------------------------
 
         try {

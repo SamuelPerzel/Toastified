@@ -3,7 +3,6 @@ package samuelperzel.toastified.world.biome;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.VerticalSurfaceType;
-import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules;
 import net.minecraft.world.gen.surfacebuilder.MaterialRules.MaterialRule;
 
@@ -13,13 +12,13 @@ public class ModSurfaceRuleData {
 
     public static MaterialRule makeRules()
     {
-        final MaterialRule CRYSTAL_FIELDS_RULES = MaterialRules.sequence(
+        final MaterialRule GLOWRAY_FOREST_RULES = MaterialRules.sequence(
                 MaterialRules.condition(MaterialRules.stoneDepth(0,false, VerticalSurfaceType.FLOOR), GRASS_BLOCK),
                 MaterialRules.condition(MaterialRules.surface(), STONE)
         );
 
         return MaterialRules.sequence(
-            MaterialRules.condition(MaterialRules.biome(ModBiomes.CRYSTAl_FIELDS), CRYSTAL_FIELDS_RULES)
+            MaterialRules.condition(MaterialRules.biome(ModBiomes.GLOWRAY_FOREST), GLOWRAY_FOREST_RULES)
         );
     }
 
