@@ -20,7 +20,7 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, GLOWRAY_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GLOWRAY_TREE),
-                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), ModBlocks.GLOWRAY_SAPLING));
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(PlacedFeatures.createCountExtraModifier(1, 0.01f, 1), ModBlocks.GLOWRAY_SAPLING));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
